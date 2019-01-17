@@ -1,0 +1,98 @@
+@charset "utf-8";
+
+// Customization
+
+// You can easily customize Bulma with your own variables.
+// Just uncomment the following block to see the result.
+
+@import url('https://fonts.googleapis.com/css?family=Maven+Pro:400,700|Quicksand:400,700');
+
+// 1. Import the initial variables
+@import "../node_modules/bulma/sass/utilities/initial-variables";
+
+// 2. Set your own initial variables
+// Update the blue shade, used for links
+$blue: #06bcef;
+$purple-pg: #6B59ED;
+$purple-pg-invert: #fff;
+$yellow-contrast: #FFD53F;
+// Update the sans-serif font family
+$family-sans-serif: "Maven Pro", "Helvetica", sans-serif;
+$family-secondary: 'Quicksand', sans-serif;
+
+// 3. Set the derived variables
+// Use the new pink as the primary color
+$primary: $purple-pg;
+$primary-invert: $purple-pg-invert;
+$link: $yellow-contrast;
+$link-focus-border: $yellow-contrast;
+$text: $grey;
+
+// 4. Import the rest of Bulma
+@import "../node_modules/bulma/bulma";
+
+::-webkit-scrollbar { 
+    display: none; 
+}
+
+body {
+	overflow:hidden;
+	scrollbar-width: none;
+}
+
+.main-stage {
+	background: #fff;
+	border-radius: 15px;
+	padding: 60px;
+	-webkit-box-shadow: 0px 10px 60px 0px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0px 10px 60px 0px rgba(0,0,0,0.2);
+	box-shadow: 0px 10px 60px 0px rgba(0,0,0,0.2);
+}
+
+.input[readonly].main-generator,
+.input.main-generator {
+	box-shadow: 0px 3px 7px 0px rgba(0,0,0,0.2);
+	-webkit-box-shadow: 0px 3px 7px 0px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0px 3px 7px 0px rgba(0,0,0,0.2);
+	border: none;
+}
+
+.hero.is-primary .main-stage .title,
+.hero.is-primary .main-stage .subtitle,
+.hero.is-primary .main-stage .subtitle a:not(.button),
+.hero.is-primary .main-stage .subtitle strong,
+.hero.is-primary .main-stage p {
+	color: #333
+}
+
+.header {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 25%;
+	background-color: transparent;
+}
+
+.header .level-item {
+	bottom: 0;
+}
+
+.header .menu {
+	position: absolute;
+  right: 3%;
+  top: 15%;
+}
+
+.header .menu .is-link:not(:last-child) {
+	margin-right: 40px;
+}
+
+.footer {
+	position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: transparent;
+  padding: 3rem 1.5rem 2rem;
+}
+
+

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ProjectGen</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/buefy/dist/buefy.min.css">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <nav class="level header">
+      <div class="level-item">
+        <img src="assets/img/logo-projectgen.png" alt="ProjectGen Logo">
+      </div>
+      <div class="level-right has-text-centered menu">
+        <a href="#" class="has-text-white has-text-weight-bold is-family-secondary is-link is-outlined">Contribute</a>
+        <a href="#" class="has-text-white has-text-weight-bold is-family-secondary is-link is-outlined">About</a>
+      </div>
+    </nav>
+
+    <div id="app">
+      <section class="hero is-medium is-primary is-fullheight">
+        <div class="hero-body">
+          <div class="container">
+            <div class="columns">
+              <div class="column is-8-desktop is-offset-2-desktop main-stage">
+                <!-- MAIN STAGE -->
+                <h1 class="title is-2 is-spaced has-text-centered">
+                  Welcome to ProjectGen :D
+                </h1>
+                <p class="has-text-centered">
+                    If you need help setting up a fantasy project to make a portfolio project, or just to practice, hit the <strong>generate</strong> button and get a new project each time you click it, with different industries, for you to create something with those lines and test youself with different “briefings” and “clients”.
+                </p>
+
+                <div class="field generated">
+                  <div class="control is-large" :class="{ 'is-loading': generating }">
+                    <input class="input is-large is-primary has-text-centered main-generator" type="text" v-model="pGenerated" placeholder="Your project will be generated here" readonly>
+                  </div>
+                </div>
+                
+                <div class="buttons are-medium is-centered">
+                  
+                  <a href="#" class="button is-grey outline">
+                    <span class="icon is-small">
+                      <i class="fas fa-history"></i>
+                    </span>
+                    <span>past projects</span>
+                  </a>
+
+                  <a href="#" class="button is-primary" @click="generating = true">
+                    <span class="icon is-small">
+                      <i class="fas fa-sync-alt" v-bind:class="{ 'fa-spin': generating }"></i>
+                    </span>
+                    <span>generate</span>
+                  </a>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="footer has-text-centered has-text-light">
+        <div class="container">
+           <div class="columns">
+            <div class="column is-8-desktop is-offset-2-desktop">
+              <p>
+                <small>
+                  Source code licensed <a href="http://opensource.org/licenses/mit-license.php">MIT</a>
+                </small>
+              </p>
+              <p style="margin-top: 1rem;">
+                <a href="http://bulma.io">
+                  <img src="made-with-bulma.png" alt="Made with Bulma" width="128" height="24">
+                </a>
+                <a title="MadeWithVueJs.com Shield" href="https://madewithvuejs.com/"> <img src="https://madewithvuejs.com/storage/repo-shields/10-shield.svg"/></a>
+
+              </p>
+              <p class="is-size-7">Made with <i class="fas fa-heart" style="color: red;"></i> by <a href=""><strong>@atempel <i class="fab fa-github"></i></strong></a></p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/buefy/dist/buefy.min.js"></script>
+    <script type="text/javascript" src="lib/main.js"></script>
+
+    <script id="__bs_script__">//<![CDATA[
+    document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.js?v=2.26.3'><\/script>".replace("HOST", location.hostname));
+//]]></script>
+  </body>
+</html>
