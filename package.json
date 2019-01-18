@@ -1,15 +1,13 @@
 {
-  "_from": "bulma-start",
-  "_id": "bulma-start@0.0.2",
+  "_from": "projectgen",
+  "_id": "projectgen@0.0.1",
   "_inBundle": false,
-  "_integrity": "sha1-RyUHiBsbJ68p4AnIWZUD4UYtIDE=",
-  "_location": "/bulma-start",
   "_phantomChildren": {},
   "_requested": {
     "type": "tag",
     "registry": true,
-    "raw": "bulma-start",
-    "name": "bulma-start",
+    "raw": "projectgen",
+    "name": "projectgen",
     "escapedName": "bulma-start",
     "rawSpec": "",
     "saveSpec": null,
@@ -19,18 +17,16 @@
     "#USER",
     "/"
   ],
-  "_resolved": "https://registry.npmjs.org/bulma-start/-/bulma-start-0.0.2.tgz",
-  "_shasum": "472507881b1b27af29e009c8599503e1462d2031",
-  "_spec": "bulma-start",
+  "_spec": "projectgen",
   "_where": "/Users/alexandre/Desktop/Pessoal/ProjectGen/projectgen",
   "author": {
-    "name": "Jeremy Thomas",
-    "email": "bbxdesign@gmail.com",
-    "url": "http://jgthms.com"
+    "name": "Alexandre Tempel",
+    "email": "alexandrectempel@gmail.com",
+    "url": "https://github.com/atempel/"
   },
   "bundleDependencies": false,
   "deprecated": false,
-  "description": "Start package for Bulma",
+  "description": "A package for ProjectGen made from bulma-start",
   "devDependencies": {
     "autoprefixer": "^7.1.5",
     "babel-cli": "^6.26.0",
@@ -47,7 +43,7 @@
     "start"
   ],
   "license": "MIT",
-  "name": "bulma-start",
+  "name": "projectgen",
   "scripts": {
     "css-build": "node-sass _sass/main.scss css/main.css",
     "css-deploy": "npm run css-build && npm run css-postcss",
